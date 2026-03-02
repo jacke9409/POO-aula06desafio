@@ -42,8 +42,21 @@ class ItemBiblioteca:
         else:
             print(f"Item {self.__titulo} já está disponível na biblioteca.")
 
-    # Getters e Setters
-
+    # Getters e Setters com validações simples(ex: ano> 0 titulo não vazio)   
+    def get_codigo(self):
+        return self.__codigo
+    
+    def get_titulo(self):
+        return self.__titulo
+    
+#set titulo junto do ano  # 
+    def set_titulo(self, titulo, ano):
+        if titulo:
+            self.__titulo = titulo
+            self.__ano = ano
+        else:
+            print(f"Título não pode ser vazio.") 
+       
 #     Livro (subclasse de ItemBiblioteca)
 # Atributos extras (encapsulados):
 # • __autor
@@ -64,3 +77,10 @@ class livro(ItemBiblioteca):
 
     def exibir_detalhes(self):
         return super().exibir_detalhes() + f", autor: {self.__autor}, num_paginas: {self.__num_paginas}"
+
+class revista(ItemBiblioteca):
+    def __init__(self, codigo, titulo, ano, disponivel,edicao, mes):
+        super().__init__(codigo, titulo, ano, disponivel)
+        self.__edicao = edicao 
+        self.__mes = mes
+    
