@@ -19,4 +19,3 @@ usar encapsulamento,herança, polimorfismo, organização e Git/Github
 3.Listar Itens
 4.Emprestar Item(Por código)
 5.Devolver item(por código)
-6.Sair
