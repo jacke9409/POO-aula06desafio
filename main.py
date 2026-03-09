@@ -2,6 +2,9 @@
 
 #  Criar um sistema de gestão de itens de uma biblioteca, com cadastro, empréstimo e devolução
 # Regras do sistema( requisitos)
+from biblioteca import Biblioteca
+from livro import Livro
+from revista import Revista
 
 def adicionar_item(self, novo_item):
     # Validação de código único (Bônus)

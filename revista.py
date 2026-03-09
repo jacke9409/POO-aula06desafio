@@ -1,5 +1,5 @@
 from item_biblioteca import ItemBiblioteca
-class revista(ItemBiblioteca):
+class Revista(ItemBiblioteca):
     def __init__(self, codigo, titulo, ano, disponivel,edicao, mes):
         super().__init__(codigo, titulo, ano, disponivel)
         self.__edicao = edicao 
