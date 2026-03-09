@@ -25,3 +25,8 @@ usar encapsulamento,herança, polimorfismo, organização e Git/Github
 *   **Encapsulamento**: Uso de atributos privados (`__atributo`) e decoradores `@property` para getters e setters com validações.
 *   **Herança**: As classes `Livro` e `Revista` herdam atributos e métodos da superclasse `ItemBiblioteca`.
 *   **Polimorfismo**: O método `exibir_detalhes()` é sobrescrito nas subclasses para exibir informações específicas de cada tipo de item.
+-------------------------------------------------------------
+* **no bonus, foi criado uma subclasse extra chamada dvd.py**
+-------------------------------------------------------------
+
+nela vai estar os itens emprestados e os disponiveis
